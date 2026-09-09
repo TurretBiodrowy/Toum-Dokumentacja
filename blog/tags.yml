@@ -1,0 +1,11 @@
+aktualizacja:
+  label: Aktualizacja
+  permalink: /aktualizacja
+  
+prerelease:
+  label: Pre-Release
+  permalink: /prerelease
+  
+beta:
+   label: Beta
+   permalink: /beta

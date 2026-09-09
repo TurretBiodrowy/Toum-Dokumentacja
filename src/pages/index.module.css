@@ -1,0 +1,250 @@
+.wrapper {
+  min-height: calc(100vh - var(--ifm-navbar-height));
+  background-color: #2b4a4a;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Górny pasek */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: #1a2f2f;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+}
+
+.userBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #10201f;
+  border-radius: 10px;
+  padding: 0.4rem 1rem;
+  flex: 1;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.statusDot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #3ddc84;
+  box-shadow: 0 0 8px #3ddc84;
+}
+
+.username {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.friendsButton {
+  background-color: #4d9b96;
+  color: #ffffff !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.friendsButton:hover {
+  background-color: #5cb3ad;
+}
+
+.main {
+  display: flex;
+  gap: 1.5rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  width: 340px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 0.5rem 0;
+}
+
+.panel {
+  background-color: #1a2f2f;
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.menuGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: linear-gradient(90deg, #3ddcc4, #2fc9b0);
+  color: #0d2b26 !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  justify-content: space-between;
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.menuButton:hover {
+  filter: brightness(1.08);
+  transform: translateX(2px);
+}
+
+.menuIcon {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.subMenuGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.6rem;
+}
+
+.subMenuButton {
+  background-color: #3f6b68;
+  color: #e8f4f2 !important;
+  font-weight: 600;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  text-align: right;
+  transition: background-color 0.15s ease;
+}
+
+.subMenuButton:hover {
+  background-color: #4d817d;
+}
+
+.footerRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.footerButton {
+  flex: 1;
+  text-align: center;
+  background-color: #4a4a4a;
+  color: #e8e8e8 !important;
+  font-weight: 700;
+  padding: 0.6rem;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: background-color 0.15s ease;
+}
+
+.footerButton:hover {
+  background-color: #5a5a5a;
+}
+
+.version {
+  color: #a9c4c1;
+  font-size: 0.85rem;
+  margin: 0;
+  padding-left: 0.5rem;
+}
+
+/* Prawy panel / viewport */
+.viewport {
+  flex: 1;
+  min-width: 300px;
+  position: relative;
+  background-color: #000000;
+  border-radius: 16px;
+  border: 6px solid #4a4a4a;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+  background-image:
+          radial-gradient(2px 2px at 20% 30%, #ffffff 100%, transparent),
+          radial-gradient(2px 2px at 65% 15%, #ffffff 100%, transparent),
+          radial-gradient(1.5px 1.5px at 80% 60%, #ffffff 100%, transparent),
+          radial-gradient(2px 2px at 40% 80%, #ffffff 100%, transparent),
+          radial-gradient(1.5px 1.5px at 90% 40%, #ffffff 100%, transparent),
+          radial-gradient(2px 2px at 10% 70%, #ffffff 100%, transparent);
+  background-repeat: repeat;
+  background-size: 400px 400px;
+  opacity: 0.6;
+}
+
+.viewportContent {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.viewportContent h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.viewportContent p {
+  color: #cfd8d6;
+  line-height: 1.6;
+}
+
+.viewportImage {
+  max-width: 200%;   /* nie 90%, żeby dokładnie trzymał się kontenera */
+  max-height: 60vh;
+  width: auto;
+  object-fit: contain;
+  border-radius: 24px;
+  filter: drop-shadow(0 3px 10px rgba(255, 0, 0, 0.5));
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+  }
+}
