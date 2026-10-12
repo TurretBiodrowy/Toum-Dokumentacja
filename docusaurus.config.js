@@ -20,13 +20,12 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://turretbiodrowy.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/Toum-Dokumentacja/',
 
   // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
   organizationName: 'TurretBiodrowy', // Usually your GitHub org/user name.
   projectName: 'Toum-Dokumentacja', // Usually your repo name.
 
@@ -109,8 +108,7 @@ const config = {
             //  position: 'left'},
 
             {
-              // TODO: DAJ DOBRY LINK
-              href: 'https://google.com',
+              href: 'https://github.com/TurretBiodrowy/Toum-Dokumentacja',
               label: 'GitHub',
               position: 'right',
             },

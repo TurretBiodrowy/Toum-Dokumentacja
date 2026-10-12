@@ -46,6 +46,7 @@ const sidebars = {
                   [
                    'role/crewmate/afterlife/Guardian Angel-Vanilla',
                    'role/crewmate/afterlife/Haunter',
+                   'role/crewmate/afterlife/Influencer-Vanilla',   
                   ],
             },
             {

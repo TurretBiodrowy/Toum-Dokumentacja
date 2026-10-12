@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const menuItems = [
     {label: 'ROLE', to: 'docs/role/O Rolach', icon: '/img/Ikony/Inne/Folder Role.png'},
@@ -11,7 +12,7 @@ const menuItems = [
 
 const subMenuItems = [
     {label: 'AKTUALIZACJE', to: '/blog'},
-   // {label: 'INSTALOWANIE MODA', to: 'role'},
+   // {label: 'INSTALOWACJA MODA', to: 'role'},
     //{label: 'MODY ROZSZERZAJĄCE', to: 'role'},
 ];
 
@@ -21,7 +22,7 @@ export default function Home() {
             <div className={styles.wrapper}>
                 <div className={styles.topBar}>
                     <div className={styles.userBadge}>
-                        <img src="/img/TOUMLogo.png" alt="TOUMLogo" className={styles.avatar} />
+                        <img src={useBaseUrl('/img/TOUMLogo.png')} alt="TOUMLogo" className={styles.avatar} />
                         <span className={styles.statusDot} />
                         <span className={styles.username}>TOWN OF US: MIRA</span>
                     </div>
@@ -46,7 +47,7 @@ export default function Home() {
                             <div className={styles.menuGroup}>
                                 {menuItems.map((item) => (
                                     <Link key={item.label} to={item.to} className={styles.menuButton}>
-                                        <img src={item.icon} alt="" className={styles.menuIcon} />
+                                        <img src={useBaseUrl(item.icon)} alt="" className={styles.menuIcon} />
                                         <span>{item.label}</span>
                                     </Link>
                                 ))}
@@ -72,8 +73,8 @@ export default function Home() {
                         <div className={styles.stars} />
                         <div className={styles.viewportContent}>
                             <img
-                                src="/img/Banner.png"
-                                alt="Tou Mira Banner"
+                                src={useBaseUrl('/img/MiraBanner.png')}
+                                alt="MiraBanner"
                                 className={styles.viewportImage}
                             />
                         </div>
