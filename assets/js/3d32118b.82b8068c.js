@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmira_docs_pl=self.webpackChunkmira_docs_pl||[]).push([["2174"],{6789(a){a.exports=JSON.parse('{"tags":[{"label":"Aktualizacja","permalink":"/Toum-Dokumentacja/blog/tags/aktualizacja","count":4},{"label":"Beta","permalink":"/Toum-Dokumentacja/blog/tags/beta","count":2}]}')}}]);

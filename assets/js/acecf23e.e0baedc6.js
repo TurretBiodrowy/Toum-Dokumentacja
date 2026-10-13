@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmira_docs_pl=self.webpackChunkmira_docs_pl||[]).push([["3220"],{1912(a){a.exports=JSON.parse('{"blogBasePath":"/Toum-Dokumentacja/blog","blogTitle":"Blog","authorsListPath":"/Toum-Dokumentacja/blog/authors"}')}}]);

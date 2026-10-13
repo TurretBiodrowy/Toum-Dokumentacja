@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmira_docs_pl=self.webpackChunkmira_docs_pl||[]).push([["8080"],{8436(a){a.exports=JSON.parse('{"metadata":{"permalink":"/Toum-Dokumentacja/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":6,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
